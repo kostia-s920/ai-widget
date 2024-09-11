@@ -222,11 +222,12 @@
         optionButtons.forEach(el => {
             el.addEventListener('click', () => {
               inputForm.value = el.innerHTML;
+              btnGenerate.disabled = false;
             })
         })
 
         inputForm.addEventListener('input', () => {
-            console.log(inputForm.value.lenght)
+            console.log(inputForm.value)
 
             if(!inputForm.value.lenght) {
                 btnGenerate.disabled = false;
