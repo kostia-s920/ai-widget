@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
           font-size: 14px;
           font-weight: 700;
           line-height: 100%;
+          margin: 0;
         }
 
         .ai-course-creator-widget__footer {
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         .button__option {
-          max-width: 260px;
+          flex: 1;
           padding: 4px 15px;
           border-radius: 100px;
           border: 1px solid #C2D4E4;
