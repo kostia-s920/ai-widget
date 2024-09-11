@@ -17,12 +17,23 @@ document.addEventListener("DOMContentLoaded", function() {
           border-radius: 20px !important;
           overflow: hidden !important;
           background-color: #09141e !important;
+          display: flex; 
+          flex-direction: column;
+          gap: 40px;
         }
 
         .ai-course-creator-widget__head {
           display: flex; 
           flex-wrap: wrap;
           gap: 20px; 
+        }
+
+        .ai-course-creator-widget__select {
+          background-color: #f7fafd;
+          border: 1px solid #c2d4e4;
+          border-radius: 4px;
+          cursor: pointer;
+          padding: 8px 20px;
         }
 
         .ai-course-creator-widget__footer {
@@ -38,6 +49,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         .button__option {
+          max-width: 260px;
+          padding: 4px 15px;
+          border-radius: 100px;
+          border: 1px solid #C2D4E4;
+          background: #F7FAFD;
+          cursor: pointer;
+          text-align: center;
+          transition: background-color .2s ease-in-out;
+          color: #031420;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
         }
     `;
     document.head.appendChild(style);
@@ -47,15 +70,15 @@ document.addEventListener("DOMContentLoaded", function() {
        <div class="ai-course-creator-widget__wrp">
 
         <div class="ai-course-creator-widget__head">
-            <select id="lesson-type">
+            <select class="ai-course-creator-widget__select" id="lesson-type">
                 <option value="lesson">Lesson</option>
                 <option value="module">Module</option>
             </select>
-            <select id="language">
+            <select class="ai-course-creator-widget__select" id="language">
                 <option value="en">English</option>
                 <option value="es">Spanish</option>
             </select>
-            <select id="tone-style">
+            <select class="ai-course-creator-widget__select" id="tone-style">
                 <option value="friendly">Friendly</option>
                 <option value="formal">Formal</option>
             </select>
