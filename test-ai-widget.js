@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Створюємо форму для введення даних
     var formHTML = `
+       <div class="ai-course-creator-widget">
         <select id="lesson-type">
             <option value="lesson">Lesson</option>
             <option value="module">Module</option>
@@ -84,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="button-suggestion">Create modules for leadership development</button>
             <button class="button-suggestion">Generate content for compliance training in [industry]</button>
         </div>
+       </div>
     `;
 
     // Вставляємо форму в контейнер
