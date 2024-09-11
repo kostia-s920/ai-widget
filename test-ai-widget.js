@@ -194,7 +194,7 @@
                 </div>
                 <div class="ai-course-creator-widget__footer-form">
                     <input data-input type="text" id="topic" placeholder="Enter your topic">
-                    <button id="generate-course">Generate</button>
+                    <button disabled data-button-generate id="generate-course">Generate</button>
                 </div>
             </div>   
            </div>
@@ -209,11 +209,20 @@
         const selectLang = shadow.querySelector('[data-select-language]');
         const selectToneStyle = shadow.querySelector('[data-select-tone-style]');
         const inputForm = shadow.querySelector('[data-input]');
+        const btnGenerate = shadow.querySelector('[data-button-generate]');
         
         optionButtons.forEach(el => {
             el.addEventListener('click', () => {
               inputForm.value = el.innerHTML;
             })
+        })
+
+        inputForm.addEventListener('input', () => {
+            console.log(inputForm.value.lenght)
+
+            if(!inputForm.value.lenght) {
+                btnGenerate.disabled = false;
+            }
         })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
