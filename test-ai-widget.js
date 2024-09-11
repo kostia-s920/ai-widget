@@ -247,7 +247,7 @@
                              "&language=" + language +
                              "&toneStyle=" + toneStyle +
                              "&topic=" + topic +
-                             "&is-generate=" + topic;
+                             "&is-generate=" + true;
 
             window.location.href = redirectUrl;
         });
