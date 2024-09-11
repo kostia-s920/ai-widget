@@ -29,11 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         .ai-course-creator-widget__select {
+          max-width: 180px;
+          width: 100%;
           background-color: #f7fafd;
           border: 1px solid #c2d4e4;
           border-radius: 4px;
           cursor: pointer;
           padding: 8px 20px;
+        }
+
+        .ai-course-creator-widget__select:focus {
+          outline: none;
         }
 
         .ai-course-creator-widget__footer {
@@ -58,9 +64,52 @@ document.addEventListener("DOMContentLoaded", function() {
           text-align: center;
           transition: background-color .2s ease-in-out;
           color: #031420;
+          font-family: Montserrat, sans-serif;
           font-size: 16px;
           font-weight: 500;
           line-height: 120%;
+        }
+
+        .button__option:hover {
+          background-color: #d3d9e1;
+        }
+
+        .ai-course-creator-widget__footer-form {
+          display: flex; 
+        }
+
+        .ai-course-creator-widget__footer-form input {
+          color: #AEB6BC;
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          padding: 9px 20px;
+          flex: 1;
+          border-radius: 4px 0px 0px 4px;
+          border: 1px solid #C2D4E4;
+          background-color: #F7FAFD;
+        }
+
+        .ai-course-creator-widget__footer-form button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 9px 20px;
+          background-color: #1DBE69;
+          border-radius: 0px 4px 4px 0px;
+          transition: background-color .1s ease-in-out;
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+        }
+
+        .ai-course-creator-widget__footer-form button:hover {
+          background-color: #169251;
         }
     `;
     document.head.appendChild(style);
