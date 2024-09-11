@@ -111,7 +111,7 @@
 
             .ai-course-creator-widget__footer-form input:focus {
               outline: none;
-              border: none;
+              border: 1px solid #C2D4E4;
             }
 
             .ai-course-creator-widget__footer-form button {
@@ -232,9 +232,9 @@
         })
 
         inputForm.addEventListener('input', () => {
-            console.log(inputForm.value)
+            console.log(inputForm.value.length)
 
-            if(!inputForm.value.lenght) {
+            if(!inputForm.value.length) {
                 btnGenerate.disabled = false;
             }
         })
