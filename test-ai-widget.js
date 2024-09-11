@@ -8,59 +8,36 @@ document.addEventListener("DOMContentLoaded", function() {
         #ai-course-creator-widget {
           max-width: 650px !important;
           width: 100% !important;
-          border-radius: 20px !important;
-          overflow: hidden !important;
-          background-color: #09141e !important;
-          padding: 0 30px !important;
+          padding: 40px 0 !important;
           margin: 0 auto !important;
         }
         
         .ai-course-creator-widget__wrp {
-          padding: 30px;
+          padding: 30px !important;
+          border-radius: 20px !important;
+          overflow: hidden !important;
+          background-color: #09141e !important;
         }
 
-        select, input, button {
-            display: inline-block;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 16px;
-            border-radius: 5px;
-            border: none;
+        .ai-course-creator-widget__head {
+          display: flex; 
+          flex-wrap: wrap;
+          gap: 20px; 
         }
-        select {
-            width: 24%;
-            margin-right: 1%;
+
+        .ai-course-creator-widget__footer {
+          display: flex; 
+          flex-direction: column;
+          gap: 20px;
         }
-        input[type="text"] {
-            width: calc(50% - 12px);
-            margin-bottom: 15px;
+
+        .ai-course-creator-widget__options {
+          display: flex; 
+          flex-wrap: wrap;
+          gap: 20px;
         }
-        button {
-            width: calc(24% - 12px);
-            background-color: #00a1ff;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #007acc;
-        }
-        .button-suggestion {
-            background-color: transparent;
-            color: #00a1ff;
-            border: 1px solid #00a1ff;
-            padding: 8px 15px;
-            margin-right: 10px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .button-suggestion:hover {
-            background-color: #00a1ff;
-            color: white;
-        }
-        .suggestions {
-            display: flex;
-            justify-content: space-between;
+
+        .button__option {
         }
     `;
     document.head.appendChild(style);
