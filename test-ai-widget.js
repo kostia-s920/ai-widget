@@ -123,6 +123,7 @@
               font-style: normal;
               font-weight: 700;
               line-height: 100%;
+              border: none;
             }
 
             .ai-course-creator-widget__footer-form button:hover {
@@ -188,8 +189,8 @@
 
             <div class="ai-course-creator-widget__footer">
                 <div class="ai-course-creator-widget__options">
-                    <button class="button__option">Create modules for leadership development</button>
-                    <button class="button__option">Generate content for compliance training in [industry]</button>
+                    <button data-btn-option class="button__option">Create modules for leadership development</button>
+                    <button data-btn-option class="button__option">Generate content for compliance training in [industry]</button>
                 </div>
                 <div class="ai-course-creator-widget__footer-form">
                     <input type="text" id="topic" placeholder="Enter your topic">
@@ -202,6 +203,12 @@
 
         shadow.appendChild(style);
         shadow.innerHTML += formHTML;
+
+        const optionButtons = shadow.querySelectorAll('[data-btn-option]');
+        
+        optionButtons.addEventListener('click', el => {
+          console.log(el.innerHTML)  
+        })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
             var lessonType = shadow.getElementById('lesson-type').value;
