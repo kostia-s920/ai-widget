@@ -157,7 +157,7 @@
             <div class="ai-course-creator-widget__head">
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Lesson</p>
-                    <select class="ai-course-creator-widget__select" id="lesson-type">
+                    <select data-select-lesson-type class="ai-course-creator-widget__select" id="lesson-type">
                         <option value="lesson">Lesson</option>
                         <option value="module">Paragraph</option>
                     </select>
@@ -165,7 +165,7 @@
 
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Language</p>
-                    <select class="ai-course-creator-widget__select" id="language">
+                    <select data-select-language class="ai-course-creator-widget__select" id="language">
                         <option value="en">English</option>
                         <option value="es">Spanish</option>
                         <option value="fr">French</option>
@@ -177,7 +177,7 @@
 
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Tone Styles</p>
-                    <select class="ai-course-creator-widget__select" id="tone-style">
+                    <select data-select-tone-style class="ai-course-creator-widget__select" id="tone-style">
                         <option value="friendly">Friendly</option>
                         <option value="encouraging">Encouraging</option>
                         <option value="neutral">Neutral</option>
@@ -193,7 +193,7 @@
                     <button data-btn-option class="button__option">Generate content for compliance training in [industry]</button>
                 </div>
                 <div class="ai-course-creator-widget__footer-form">
-                    <input type="text" id="topic" placeholder="Enter your topic">
+                    <input data-input type="text" id="topic" placeholder="Enter your topic">
                     <button id="generate-course">Generate</button>
                 </div>
             </div>   
@@ -205,20 +205,24 @@
         shadow.innerHTML += formHTML;
 
         const optionButtons = shadow.querySelectorAll('[data-btn-option]');
+        const selectLessonType = shadow.querySelector('[data-select-lesson-type]');
+        const selectLang = shadow.querySelector('[data-select-language]');
+        const selectToneStyle = shadow.querySelector('[data-select-tone-style]');
+        const inputForm = shadow.querySelector('[data-input]');
         
         optionButtons.forEach(el => {
             el.addEventListener('click', () => {
-              console.log(el.innerHTML)  
+              inputForm.value = el.innerHTML;
             })
         })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
-            var lessonType = shadow.getElementById('lesson-type').value;
-            var language = shadow.getElementById('language').value;
-            var toneStyle = shadow.getElementById('tone-style').value;
-            var topic = encodeURIComponent(shadow.getElementById('topic').value);
+            const lessonType = selectLessonType.value;
+            const language = selectLang.value;
+            const toneStyle = selectToneStyle.value;
+            const topic = encodeURIComponent(shadow.getElementById('topic').value);
 
-            var redirectUrl = "https://academyocean.com/ai-course-creator?lesson=" + lessonType +
+            const redirectUrl = "https://academyocean.com/ai-course-creator?lesson=" + lessonType +
                              "&language=" + language +
                              "&toneStyle=" + toneStyle +
                              "&topic=" + topic;
