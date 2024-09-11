@@ -112,6 +112,7 @@
             .ai-course-creator-widget__footer-form input:focus {
               outline: none;
               border: 1px solid #C2D4E4;
+              color: #031420;
             }
 
             .ai-course-creator-widget__footer-form button {
