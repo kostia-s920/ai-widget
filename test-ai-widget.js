@@ -179,12 +179,12 @@
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Language</p>
                     <select data-select-language class="ai-course-creator-widget__select" id="language">
-                        <option value="en">English</option>
-                        <option value="es">Spanish</option>
-                        <option value="fr">French</option>
-                        <option value="de">German</option>
-                        <option value="uk">Ukrainian</option>
-                        <option value="ru">Russian</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Ukrainian">Ukrainian</option>
+                        <option value="Russian">Russian</option>
                     </select>
                 </div> 
 
@@ -246,7 +246,8 @@
             const redirectUrl = "https://academyocean.com/ai-course-creator?lesson=" + lessonType +
                              "&language=" + language +
                              "&toneStyle=" + toneStyle +
-                             "&topic=" + topic;
+                             "&topic=" + topic +
+                             "&is-generate=" + topic;
 
             window.location.href = redirectUrl;
         });
