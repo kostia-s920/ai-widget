@@ -42,6 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
           outline: none;
         }
 
+        .ai-course-creator-widget__select-wrp {
+          display: flex; 
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .ai-course-creator-widget__select-title {
+          color: #fafafa;
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 100%;
+        }
+
         .ai-course-creator-widget__footer {
           display: flex; 
           flex-direction: column;
@@ -119,18 +133,36 @@ document.addEventListener("DOMContentLoaded", function() {
        <div class="ai-course-creator-widget__wrp">
 
         <div class="ai-course-creator-widget__head">
-            <select class="ai-course-creator-widget__select" id="lesson-type">
-                <option value="lesson">Lesson</option>
-                <option value="module">Module</option>
-            </select>
-            <select class="ai-course-creator-widget__select" id="language">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-            </select>
-            <select class="ai-course-creator-widget__select" id="tone-style">
-                <option value="friendly">Friendly</option>
-                <option value="formal">Formal</option>
-            </select>
+            <div class="ai-course-creator-widget__select-wrp">
+                <p class="ai-course-creator-widget__select-title">Lesson</p>
+                <select class="ai-course-creator-widget__select" id="lesson-type">
+                    <option value="lesson">Lesson</option>
+                    <option value="module">Paragraph</option>
+                </select>
+            </div> 
+
+            <div class="ai-course-creator-widget__select-wrp">
+                <p class="ai-course-creator-widget__select-title">Language</p>
+                <select class="ai-course-creator-widget__select" id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="uk">Ukrainian</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div> 
+
+            <div class="ai-course-creator-widget__select-wrp">
+                <p class="ai-course-creator-widget__select-title">Tone Styles</p>
+                <select class="ai-course-creator-widget__select" id="tone-style">
+                    <option value="friendly">Friendly</option>
+                    <option value="encouraging">Encouraging</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="informative">Informative</option>
+                    <option value="humorous">Humorous</option>
+                </select>
+            </div> 
         </div>    
 
         <div class="ai-course-creator-widget__footer">
