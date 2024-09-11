@@ -6,14 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
     var style = document.createElement('style');
     style.innerHTML = `
         #ai-course-creator-widget {
-            padding: 20px;
-            background-color: #0c0e1b;
-            border-radius: 10px;
-            width: 550px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: white;
-            font-family: Arial, sans-serif;
+          max-width: 650px !important;
+          width: 100% !important;
+          border-radius: 20px !important;
+          overflow: hidden !important;
+          background-color: #09141e !important;
+          padding: 0 30px !important;
+          margin: 0 auto !important;
         }
+        
+        .ai-course-creator-widget__wrp {
+          padding: 30px;
+        }
+
         select, input, button {
             display: inline-block;
             padding: 10px;
@@ -62,29 +67,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Створюємо форму для введення даних
     var formHTML = `
-       <div class="ai-course-creator-widget test">
-        <select id="lesson-type">
-            <option value="lesson">Lesson</option>
-            <option value="module">Module</option>
-        </select>
-        <select id="language">
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-        </select>
-        <select id="learning-style">
-            <option value="global">Global</option>
-            <option value="detailed">Detailed</option>
-        </select>
-        <select id="tone-style">
-            <option value="friendly">Friendly</option>
-            <option value="formal">Formal</option>
-        </select>
-        <input type="text" id="topic" placeholder="Enter your topic">
-        <button id="generate-course">Generate course</button>
-        <div class="suggestions">
-            <button class="button-suggestion">Create modules for leadership development</button>
-            <button class="button-suggestion">Generate content for compliance training in [industry]</button>
-        </div>
+       <div class="ai-course-creator-widget__wrp">
+
+        <div class="ai-course-creator-widget__head">
+            <select id="lesson-type">
+                <option value="lesson">Lesson</option>
+                <option value="module">Module</option>
+            </select>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+            </select>
+            <select id="tone-style">
+                <option value="friendly">Friendly</option>
+                <option value="formal">Formal</option>
+            </select>
+        </div>    
+
+        <div class="ai-course-creator-widget__footer">
+            <div class="ai-course-creator-widget__options">
+                <button class="button__option">Create modules for leadership development</button>
+                <button class="button__option">Generate content for compliance training in [industry]</button>
+            </div>
+            <div class="ai-course-creator-widget__footer-form">
+                <input type="text" id="topic" placeholder="Enter your topic">
+                <button id="generate-course">Generate course</button>
+            </div>
+        </div>   
        </div>
     `;
 
