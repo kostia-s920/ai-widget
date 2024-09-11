@@ -232,7 +232,7 @@
         })
 
         inputForm.addEventListener('input', () => {
-            btnGenerate.disabled = !inputForm.value.length ? true : false;
+            btnGenerate.disabled = inputForm.value.length > 1 ? true : false;
         })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
