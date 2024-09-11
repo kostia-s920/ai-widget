@@ -130,6 +130,14 @@
               background-color: #169251;
             }
 
+            .ai-course-creator-widget__footer-form button:disabled {
+              background-color: #979797;
+            }
+
+            .ai-course-creator-widget__footer-form button:disabled:hover {
+              background-color: #979797;
+            }
+
             @media(max-width: 768px) {
               .ai-course-creator-widget__wrp {
                 padding: 15px 30px !important;
