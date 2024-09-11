@@ -109,6 +109,11 @@
               background-color: #F7FAFD;
             }
 
+            .ai-course-creator-widget__footer-form input:focus {
+              outline: none;
+              border: none;
+            }
+
             .ai-course-creator-widget__footer-form button {
               display: flex;
               align-items: center;
