@@ -7,7 +7,7 @@
 
         const style = document.createElement('style');
         style.innerHTML = `
-            #ai-course-creator-widget {
+            .ai-course-creator-widget {
               max-width: 650px !important;
               width: 100% !important;
               padding: 40px 0 !important;
@@ -150,6 +150,7 @@
         `;
 
         const formHTML = `
+        <div class="ai-course-creator-widget">
            <div class="ai-course-creator-widget__wrp">
 
             <div class="ai-course-creator-widget__head">
@@ -196,6 +197,7 @@
                 </div>
             </div>   
            </div>
+        </div>
         `;
 
         shadow.appendChild(style);
