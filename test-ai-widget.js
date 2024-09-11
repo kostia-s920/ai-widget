@@ -206,8 +206,10 @@
 
         const optionButtons = shadow.querySelectorAll('[data-btn-option]');
         
-        optionButtons.addEventListener('click', el => {
-          console.log(el.innerHTML)  
+        optionButtons.forEach(el => {
+            el.addEventListener('click', () => {
+              console.log(el.innerHTML)  
+            })
         })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
