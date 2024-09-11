@@ -236,7 +236,7 @@
         inputForm.addEventListener('input', () => {
             console.log(inputForm.value.length !== 0, "inputForm.value.length !== 0")
             console.log(inputForm.value.length, "inputForm.value.length")
-            btnGenerate.disabled = inputForm.value.length !== 0;
+            btnGenerate.disabled = inputForm.value.length === 0;
         })
 
         shadow.getElementById('generate-course').addEventListener('click', function() {
