@@ -27,11 +27,12 @@
             .ai-course-creator-widget__title {
               color: #fafafa;
               font-family: Montserrat, sans-serif;
-              font-size: 16px;
+              font-size: 18px;
               font-weight: 800;
               line-height: 100%;
               width: 100%;
-              margin: 0 auto 20px;
+              margin: 0 auto;
+              text-align: center;
             }
 
             .ai-course-creator-widget__head {
