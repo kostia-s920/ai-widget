@@ -24,6 +24,16 @@
               gap: 40px;
             }
 
+            .ai-course-creator-widget__title {
+              color: #fafafa;
+              font-family: Montserrat, sans-serif;
+              font-size: 16px;
+              font-weight: 800;
+              line-height: 100%;
+              width: 100%;
+              margin: 0 auto 20px;
+            }
+
             .ai-course-creator-widget__head {
               display: flex; 
               flex-wrap: wrap;
@@ -167,6 +177,8 @@
         const formHTML = `
         <div class="ai-course-creator-widget">
            <div class="ai-course-creator-widget__wrp">
+
+           <p class="ai-course-creator-widget__title">Create online course with AI free</p>
 
             <div class="ai-course-creator-widget__head">
                 <div class="ai-course-creator-widget__select-wrp">
