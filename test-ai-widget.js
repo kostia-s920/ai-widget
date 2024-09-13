@@ -185,8 +185,8 @@
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Lesson</p>
                     <select data-select-lesson-type class="ai-course-creator-widget__select" id="lesson-type">
-                        <option value="lesson">Lesson</option>
-                        <option value="module">Paragraph</option>
+                        <option value="Lesson">Lesson</option>
+                        <option value="Paragraph">Paragraph</option>
                     </select>
                 </div> 
 
@@ -205,11 +205,11 @@
                 <div class="ai-course-creator-widget__select-wrp">
                     <p class="ai-course-creator-widget__select-title">Tone Styles</p>
                     <select data-select-tone-style class="ai-course-creator-widget__select" id="tone-style">
-                        <option value="friendly">Friendly</option>
-                        <option value="encouraging">Encouraging</option>
-                        <option value="neutral">Neutral</option>
-                        <option value="informative">Informative</option>
-                        <option value="humorous">Humorous</option>
+                        <option value="Friendly">Friendly</option>
+                        <option value="Encouraging">Encouraging</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Informative">Informative</option>
+                        <option value="Humorous">Humorous</option>
                     </select>
                 </div> 
             </div>    
