@@ -141,6 +141,7 @@
               font-weight: 700;
               line-height: 100%;
               border: none;
+              cursor: pointer;
             }
 
             .ai-course-creator-widget__footer-form button:hover {
