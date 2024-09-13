@@ -46,7 +46,7 @@
               border: 1px solid #c2d4e4;
               border-radius: 4px;
               cursor: pointer;
-              padding: 8px 20px;
+              padding: 8px 2px;
             }
 
             .ai-course-creator-widget__select:focus {
