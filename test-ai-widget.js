@@ -257,7 +257,7 @@
             const toneStyle = selectToneStyle.value;
             const topic = encodeURIComponent(shadow.getElementById('topic').value);
 
-            const redirectUrl = "https://dev8.academyocean.dev/ai-course-creator?lesson=" + lessonType +
+            const redirectUrl = "https://dev10.academyocean.dev/ai-course-creator?lesson=" + lessonType +
                              "&language=" + language +
                              "&toneStyle=" + toneStyle +
                              "&topic=" + topic +
