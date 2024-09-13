@@ -150,10 +150,12 @@
 
             .ai-course-creator-widget__footer-form button:disabled {
               background-color: #979797;
+              cursor: auto;
             }
 
             .ai-course-creator-widget__footer-form button:disabled:hover {
               background-color: #979797;
+              cursor: auto;
             }
 
             @media(max-width: 768px) {
